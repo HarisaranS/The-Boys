@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blockchain Voting System</title>
+    <link rel="stylesheet" href="addp1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>VoteChain</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vote">Vote</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="home" class="welcome-section">
+        <div class="intro-text">
+            <h1>Welcome to the Blockchain Voting System</h1>
+            <p>Vote securely, transparently, and decentralized!</p>
+            <button id="start-voting" onclick="scrollToVote()">Start Voting</button>
+        </div>
+    </section>
+
+    <!-- Voting Section -->
+    <section id="vote" class="vote-section">
+        <h2>Select Your Candidate</h2>
+        <div class="vote-buttons">
+            <button id="candidate1" onclick="vote(1)">Candidate 1</button>
+            <button id="candidate2" onclick="vote(2)">Candidate 2</button>
+            <button id="candidate3" onclick="vote(3)">Candidate 3</button>
+            <button id="candidate4" onclick="vote(4)">Candidate 4</button>
+        </div>
+        <h3 id="status"></h3>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results-section">
+        <h1 style="color: #0df3f3;">Voting Results</h1>
+        <br>
+        <div id="vote-results">
+            <p id="candidate1-votes">Candidate 1: 0 votes</p>
+            <p id="candidate2-votes">Candidate 2: 0 votes</p>
+            <p id="candidate3-votes">Candidate 3: 0 votes</p>
+            <p id="candidate4-votes">Candidate 4: 0 votes</p>
+        </div>
+        <button id="refreshResults" onclick="getResults()">Refresh Results</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Blockchain Voting</h2>
+        <p>
+            Blockchain voting provides transparency, security, and privacy for electoral processes. Every vote is securely stored and cannot be tampered with, ensuring fair elections.
+        </p>
+        <p>
+            By using Ethereum blockchain, we ensure that each vote is counted only once and can be verified by anyone.
+        </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 VoteChain. All rights reserved.</p>
+            <p>Powered by Blockchain Technology</p>
+            <ul>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="addp1.js"></script>
+
+</body>
+</html>
+
